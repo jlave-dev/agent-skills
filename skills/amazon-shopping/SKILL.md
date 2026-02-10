@@ -1,6 +1,6 @@
 ---
 name: amazon-shopping
-version: "1.0.0"
+version: "1.0.1"
 description: Search Amazon.com, extract product data, and present ranked recommendations. Use when user asks to shop on Amazon, find products, compare items, or research purchases. Prioritizes review count over rating.
 allowed-tools: "Bash(agent-browser*)"
 ---
