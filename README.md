@@ -27,7 +27,7 @@ Search Amazon.com, extract product data, and present ranked recommendations.
 
 ## Development
 
-Skills are organized in the `skills/` directory following the [Agent Skills Specification](https://github.com/vercel-labs/skills).
+Skills are organized in the `skills/` directory following the [Agent Skills Specification](https://agentskills.io).
 
 ## License
 
