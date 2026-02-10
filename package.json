@@ -4,6 +4,11 @@
   "description": "A collection of installable agent skills compatible with the Vercel Skills CLI",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "test": "node --test scripts/*.test.js",
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run --no-ci"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1"

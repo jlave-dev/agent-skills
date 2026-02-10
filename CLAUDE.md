@@ -49,7 +49,7 @@ BREAKING CHANGE: Product API now requires new format
 ## Release Process
 
 1. Push commits to main (following conventional commits)
-2. GitHub Actions analyzes commits and creates a single release commit with:
+2. GitHub Actions runs semantic-release and, when a release is due, creates a single release commit with:
    - Updated `package.json` version
    - Auto-generated CHANGELOG
    - Synced skill versions in `SKILL.md` files
@@ -66,8 +66,8 @@ agent-skills/
 │       ├── reference/        # Reference docs
 │       └── scripts/          # Implementation scripts
 ├── .github/          # GitHub configuration
-│   ├── workflows/            # CI/CD
-│   └── release-please-*.json # Release automation
+│   └── workflows/            # CI/CD
+├── .releaserc.json   # semantic-release configuration
 ├── CHANGELOG.md      # Auto-generated changelog
 ├── package.json      # Version tracking (not published to npm)
 └── .commitlintrc.json # Commit linting rules (update scopes when adding skills)

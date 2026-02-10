@@ -1,6 +1,6 @@
 # Agent Skills
 
-[![Release](https://github.com/jlave-dev/agent-skills/actions/workflows/release-please.yml/badge.svg)](https://github.com/jlave-dev/agent-skills/releases)
+[![Release](https://github.com/jlave-dev/agent-skills/actions/workflows/release.yml/badge.svg)](https://github.com/jlave-dev/agent-skills/releases)
 
 A collection of installable agent skills compatible with the Vercel Skills CLI.
 
@@ -29,7 +29,11 @@ Search Amazon.com, extract product data, and present ranked recommendations.
 
 ## Releases
 
-This project uses automated semantic versioning powered by [Release Please](https://github.com/googleapis/release-please). Releases are created automatically based on commits pushed to the `main` branch.
+This project uses automated semantic versioning powered by [semantic-release](https://github.com/semantic-release/semantic-release). Every merge to `main` is evaluated automatically and, when commits require it, semantic-release creates:
+- a version bump in `package.json`
+- synced `version` fields in all `skills/**/SKILL.md`
+- a Git tag (`vX.Y.Z`)
+- a GitHub Release with generated notes
 
 See [Releases](https://github.com/jlave-dev/agent-skills/releases) for the full changelog.
 
@@ -71,8 +75,8 @@ agent-skills/
 │       ├── reference/        # Reference docs
 │       └── scripts/          # Implementation scripts
 ├── .github/          # GitHub configuration
-│   ├── workflows/            # CI/CD
-│   └── release-please-*.json # Release automation
+│   └── workflows/            # CI/CD
+├── .releaserc.json   # semantic-release configuration
 ├── CHANGELOG.md      # Auto-generated changelog
 └── package.json      # Version tracking
 ```
