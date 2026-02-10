@@ -1,6 +1,6 @@
 {
   "name": "agent-skills",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A collection of installable agent skills compatible with the Vercel Skills CLI",
   "private": true,
   "license": "MIT",
