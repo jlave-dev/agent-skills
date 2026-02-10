@@ -1,0 +1,11 @@
+{
+  "name": "agent-skills",
+  "version": "0.0.0",
+  "description": "A collection of installable agent skills compatible with the Vercel Skills CLI",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1"
+  }
+}

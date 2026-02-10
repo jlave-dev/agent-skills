@@ -1,5 +1,6 @@
 ---
 name: amazon-shopping
+version: "1.0.0"
 description: Search Amazon.com, extract product data, and present ranked recommendations. Use when user asks to shop on Amazon, find products, compare items, or research purchases. Prioritizes review count over rating.
 allowed-tools: "Bash(agent-browser*)"
 ---
@@ -69,7 +70,7 @@ agent-browser snapshot > results.txt
 **Use the container-based extraction script** instead of grep:
 ```bash
 # Extract product name AND its ASIN from THE SAME container
-python3 ~/.claude/skills/amazon-shopping/scripts/extract_products.py results.txt
+python3 scripts/extract_products.py results.txt
 ```
 
 The script parses the YAML/indented structure of the accessibility tree and identifies product containers (list items containing both heading and link), then extracts product name AND its ASIN from THE SAME container.
@@ -96,7 +97,7 @@ grep -B2 -A2 "Product Name" results.txt | grep -oE "dp/[A-Z0-9]{10}"
 
 ```bash
 # Use the verification script
-~/.claude/skills/amazon-shopping/scripts/verify_products.sh results.txt
+scripts/verify_products.sh results.txt
 ```
 
 The verification script:
@@ -171,5 +172,5 @@ Example: 4.0 with 10,000 reviews > 5.0 with 100 reviews
 For 10+ products, use the ranking script:
 
 ```bash
-python3 ~/.claude/skills/amazon-shopping/scripts/rank_products.py products.jsonl --budget 100 --priority rating
+python3 scripts/rank_products.py products.jsonl --budget 100 --priority rating
 ```

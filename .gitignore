@@ -9,3 +9,9 @@
 
 # Logs
 *.log
+
+# Dependencies
+node_modules/
+
+# Claude Code
+.omc/

@@ -79,7 +79,7 @@ agent-browser open https://www.amazon.com/dp/[ASIN]
 **Use the dedicated extraction script** for 100% accurate product+ASIN pairing:
 
 ```bash
-python3 ~/.claude/skills/amazon-shopping/scripts/extract_products.py results.txt
+python3 scripts/extract_products.py results.txt
 ```
 
 **How it works:**
