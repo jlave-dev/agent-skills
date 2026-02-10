@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Basic electronics search",
+    "query": "Search Amazon for CTS 500k guitar pots",
+    "files": [],
+    "expected_behavior": [
+      "Uses agent-browser CLI (not Playwright MCP)",
+      "Fills searchbox and presses Enter",
+      "Extracts ASINs from snapshot using grep",
+      "Presents products with clean amazon.com/dp/[ASIN] URLs"
+    ]
+  },
+  {
+    "name": "ASIN extraction accuracy",
+    "query": "Extract product data from snapshot",
+    "files": ["test-snapshot.txt"],
+    "expected_behavior": [
+      "Extracts exactly 10-character ASINs",
+      "Never fabricates or hallucinates ASINs",
+      "Handles /dp/, /gp/product/, and amzn.to/ URL formats",
+      "Provides clean amazon.com/dp/[ASIN] links"
+    ]
+  },
+  {
+    "name": "Error recovery",
+    "query": "Handle CAPTCHA or rate limit",
+    "files": ["captcha-snapshot.txt"],
+    "expected_behavior": [
+      "Recognizes CAPTCHA in snapshot",
+      "Waits 60 seconds before retry",
+      "Informs user about rate limiting",
+      "Does not fabricate data to mask error"
+    ]
+  }
+]
