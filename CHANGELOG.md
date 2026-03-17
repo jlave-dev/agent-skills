@@ -1,3 +1,7 @@
+## <small>1.0.3 (2026-03-17)</small>
+
+* fix: include all released commit types in changelog notes ([69418bb](https://github.com/jlave-dev/agent-skills/commit/69418bb))
+
 ## [1.0.2](https://github.com/jlave-dev/agent-skills/compare/v1.0.1...v1.0.2) (2026-03-17)
 
 ## [1.0.1](https://github.com/jlave-dev/agent-skills/compare/v1.0.0...v1.0.1) (2026-02-10)
