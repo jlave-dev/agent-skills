@@ -1,6 +1,6 @@
 ---
 name: consult-codex
-version: "1.0.3"
+version: "1.1.0"
 disable-model-invocation: true
 description: Ask Codex CLI for a second opinion on local code changes, debugging findings, architectural tradeoffs, or ship-readiness decisions. Use only when the user explicitly asks for Codex's opinion, a Codex review, or a Codex sanity check. Do not invoke this skill automatically.
 ---

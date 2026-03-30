@@ -1,6 +1,6 @@
 ---
 name: amazon-shopping
-version: "1.0.3"
+version: "1.1.0"
 description: Search Amazon.com, extract product data, and present ranked recommendations. Use when user asks to shop on Amazon, find products, compare items, or research purchases. Prioritizes review count over rating.
 allowed-tools: "mcp__chrome-devtools__*"
 ---

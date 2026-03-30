@@ -1,3 +1,7 @@
+## 1.1.0 (2026-03-30)
+
+* feat(consult-codex): add consult-codex skill ([b11fcf3](https://github.com/jlave-dev/agent-skills/commit/b11fcf3))
+
 ## <small>1.0.3 (2026-03-17)</small>
 
 * fix: include all released commit types in changelog notes ([69418bb](https://github.com/jlave-dev/agent-skills/commit/69418bb))
