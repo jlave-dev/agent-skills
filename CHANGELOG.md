@@ -1,3 +1,7 @@
+## <small>1.1.1 (2026-04-06)</small>
+
+* chore: remove consult-codex skill ([d90a7ad](https://github.com/jlave-dev/agent-skills/commit/d90a7ad))
+
 ## 1.1.0 (2026-03-30)
 
 * feat(consult-codex): add consult-codex skill ([b11fcf3](https://github.com/jlave-dev/agent-skills/commit/b11fcf3))
