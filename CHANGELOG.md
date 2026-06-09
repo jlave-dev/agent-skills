@@ -1,3 +1,7 @@
+## <small>1.2.1 (2026-06-09)</small>
+
+* chore(subtractive-ui): refresh plugin metadata ([8c0eaa2](https://github.com/jlave-dev/agent-skills/commit/8c0eaa2))
+
 ## 1.2.0 (2026-06-09)
 
 * feat(subtractive-ui): add marketplace plugin ([2cb7af7](https://github.com/jlave-dev/agent-skills/commit/2cb7af7))

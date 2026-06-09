@@ -1,6 +1,6 @@
 {
   "name": "agent-skills",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Installable agent skills and a Codex plugin marketplace",
   "private": true,
   "license": "MIT",
