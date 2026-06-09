@@ -1,0 +1,20 @@
+{
+  "name": "agent-skills",
+  "interface": {
+    "displayName": "Agent Skills"
+  },
+  "plugins": [
+    {
+      "name": "subtractive-ui",
+      "source": {
+        "source": "local",
+        "path": "./plugins/subtractive-ui"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

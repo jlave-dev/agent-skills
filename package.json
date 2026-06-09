@@ -1,7 +1,7 @@
 {
   "name": "agent-skills",
-  "version": "0.0.0",
-  "description": "A collection of installable agent skills compatible with the Vercel Skills CLI",
+  "version": "0.0.0-development",
+  "description": "Installable agent skills and a Codex plugin marketplace",
   "private": true,
   "license": "MIT",
   "scripts": {

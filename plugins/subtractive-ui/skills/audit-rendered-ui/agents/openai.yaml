@@ -1,0 +1,5 @@
+interface:
+  display_name: "Audit Rendered UI"
+  short_description: "Review pixels for clutter and leaks."
+  brand_color: "#D94F3D"
+  default_prompt: "Use $audit-rendered-ui to inspect this rendered UI for clutter and leaky copy."

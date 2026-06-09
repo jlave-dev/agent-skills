@@ -1,0 +1,5 @@
+interface:
+  display_name: "Refactor UI"
+  short_description: "Remove clutter without behavior changes."
+  brand_color: "#2F7D57"
+  default_prompt: "Use $refactor-ui to simplify this UI without changing behavior."
