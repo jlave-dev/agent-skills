@@ -6,7 +6,19 @@
       "always",
       ["feat", "fix", "docs", "chore", "perf", "refactor", "test", "style", "build", "ci"]
     ],
-    "scope-enum": [2, "always", ["amazon-shopping", "release", "deps"]],
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "amazon-shopping",
+        "audit-rendered-ui",
+        "design-frontend",
+        "refactor-ui",
+        "release",
+        "deps",
+        "subtractive-ui"
+      ]
+    ],
     "subject-case": [0]
   }
 }
