@@ -1,3 +1,7 @@
+## <small>1.1.3 (2026-06-09)</small>
+
+* docs(amazon-shopping): generalize browser guidance ([fd0fdea](https://github.com/jlave-dev/agent-skills/commit/fd0fdea))
+
 ## <small>1.1.2 (2026-06-09)</small>
 
 * chore: remove skill-level versioning ([718b9c8](https://github.com/jlave-dev/agent-skills/commit/718b9c8))
