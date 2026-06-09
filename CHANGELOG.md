@@ -1,3 +1,7 @@
+## <small>1.1.2 (2026-06-09)</small>
+
+* chore: remove skill-level versioning ([718b9c8](https://github.com/jlave-dev/agent-skills/commit/718b9c8))
+
 ## <small>1.1.1 (2026-04-06)</small>
 
 * chore: remove consult-codex skill ([d90a7ad](https://github.com/jlave-dev/agent-skills/commit/d90a7ad))
