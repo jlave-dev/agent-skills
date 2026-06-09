@@ -1,3 +1,7 @@
+## 1.2.0 (2026-06-09)
+
+* feat(subtractive-ui): add marketplace plugin ([2cb7af7](https://github.com/jlave-dev/agent-skills/commit/2cb7af7))
+
 ## <small>1.1.3 (2026-06-09)</small>
 
 * docs(amazon-shopping): generalize browser guidance ([fd0fdea](https://github.com/jlave-dev/agent-skills/commit/fd0fdea))
