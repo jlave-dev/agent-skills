@@ -1,7 +1,7 @@
 {
-  "name": "agent-skills",
+  "name": "agent-plugins",
   "version": "0.0.0-development",
-  "description": "Installable agent skills and a Codex plugin marketplace",
+  "description": "Installable agent plugins and a Codex plugin marketplace",
   "private": true,
   "license": "MIT",
   "scripts": {

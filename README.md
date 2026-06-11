@@ -1,6 +1,6 @@
-# Agent Skills
+# Agent Plugins
 
-[![Release](https://github.com/jlave-dev/agent-skills/actions/workflows/release.yml/badge.svg)](https://github.com/jlave-dev/agent-skills/releases)
+[![Release](https://github.com/jlave-dev/agent-plugins/actions/workflows/release.yml/badge.svg)](https://github.com/jlave-dev/agent-plugins/releases)
 
 A repo-local Codex plugin marketplace for reusable agent workflows. The marketplace currently packages Amazon account workflows and Subtractive UI frontend-review workflows as installable Codex plugins.
 
@@ -15,13 +15,13 @@ This repo exposes its Codex marketplace at:
 From a local checkout, add the marketplace root to Codex:
 
 ```bash
-codex plugin marketplace add /path/to/agent-skills
+codex plugin marketplace add /path/to/agent-plugins
 ```
 
 After changes are pushed, Codex can also add it from GitHub:
 
 ```bash
-codex plugin marketplace add jlave-dev/agent-skills
+codex plugin marketplace add jlave-dev/agent-plugins
 ```
 
 ## Available Plugins
@@ -81,7 +81,7 @@ python3 /Users/james/.codex/skills/.system/plugin-creator/scripts/update_plugin_
 ## Project Structure
 
 ```text
-agent-skills/
+agent-plugins/
 ├── .agents/
 │   └── plugins/
 │       └── marketplace.json     # Codex plugin marketplace
@@ -108,9 +108,9 @@ This project uses automated semantic versioning powered by [semantic-release](ht
 
 - a Git tag (`vX.Y.Z`)
 - a GitHub Release with generated notes
-- a downloadable archive named `agent-skills-vX.Y.Z.tar.gz`
+- a downloadable archive named `agent-plugins-vX.Y.Z.tar.gz`
 
-Release notes live in [GitHub Releases](https://github.com/jlave-dev/agent-skills/releases); there is no committed `CHANGELOG.md`. The committed `package.json` keeps the development placeholder version `0.0.0-development`. During CI release preparation, semantic-release temporarily rewrites `package.json` to the computed release version before packaging the uploaded archive. The temporary version bump is not committed back to `main`.
+Release notes live in [GitHub Releases](https://github.com/jlave-dev/agent-plugins/releases); there is no committed `CHANGELOG.md`. The committed `package.json` keeps the development placeholder version `0.0.0-development`. During CI release preparation, semantic-release temporarily rewrites `package.json` to the computed release version before packaging the uploaded archive. The temporary version bump is not committed back to `main`.
 
 ## Commit Conventions
 

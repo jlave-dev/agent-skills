@@ -6,8 +6,8 @@
     "name": "James Lave",
     "url": "https://github.com/jlave-dev"
   },
-  "homepage": "https://github.com/jlave-dev/agent-skills",
-  "repository": "https://github.com/jlave-dev/agent-skills",
+  "homepage": "https://github.com/jlave-dev/agent-plugins",
+  "repository": "https://github.com/jlave-dev/agent-plugins",
   "license": "MIT",
   "keywords": [
     "frontend",
@@ -29,9 +29,9 @@
       "screenshot review",
       "responsive QA"
     ],
-    "websiteURL": "https://github.com/jlave-dev/agent-skills",
-    "privacyPolicyURL": "https://github.com/jlave-dev/agent-skills/blob/main/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/jlave-dev/agent-skills/blob/main/TERMS.md",
+    "websiteURL": "https://github.com/jlave-dev/agent-plugins",
+    "privacyPolicyURL": "https://github.com/jlave-dev/agent-plugins/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/jlave-dev/agent-plugins/blob/main/TERMS.md",
     "defaultPrompt": [
       "Use Subtractive UI to audit or simplify this frontend."
     ],

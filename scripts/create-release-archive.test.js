@@ -27,7 +27,7 @@ async function createFixture(t, version = "2.5.0") {
   });
 
   await writeJson(path.join(tempDir, "package.json"), {
-    name: "agent-skills",
+    name: "agent-plugins",
     version,
   });
   await writeJson(path.join(tempDir, ".agents", "plugins", "marketplace.json"), {
@@ -41,7 +41,7 @@ async function createFixture(t, version = "2.5.0") {
     path.join(tempDir, "plugins", "amazon", "skills", "shop-amazon", "SKILL.md"),
     "---\nname: shop-amazon\n---\n"
   );
-  await writeText(path.join(tempDir, "README.md"), "# Agent Skills\n");
+  await writeText(path.join(tempDir, "README.md"), "# Agent Plugins\n");
   await writeText(path.join(tempDir, "TERMS.md"), "# Terms\n");
   await writeText(path.join(tempDir, "PRIVACY.md"), "# Privacy\n");
 
@@ -72,10 +72,10 @@ test("creates a release archive with marketplace and plugin files", async (t) =>
     version: "2.5.0",
   });
 
-  assert.equal(result.archiveName, "agent-skills-v2.5.0.tar.gz");
+  assert.equal(result.archiveName, "agent-plugins-v2.5.0.tar.gz");
   assert.equal(
     result.archivePath,
-    path.join(repoRoot, "dist", "agent-skills-v2.5.0.tar.gz")
+    path.join(repoRoot, "dist", "agent-plugins-v2.5.0.tar.gz")
   );
 
   const entries = await listArchiveEntries(result.archivePath);

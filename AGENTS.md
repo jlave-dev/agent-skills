@@ -1,4 +1,4 @@
-# Agent Skills - Development Guidelines
+# Agent Plugins - Development Guidelines
 
 ## Project Context
 
@@ -52,7 +52,7 @@ node /Users/james/.codex/plugins/cache/openai-curated/plugin-eval/c6ea566d/scrip
 ## Repository Structure
 
 ```text
-agent-skills/
+agent-plugins/
 ├── .agents/plugins/marketplace.json
 ├── plugins/
 │   ├── amazon/
@@ -142,6 +142,6 @@ Push conventional commits to `main`. GitHub Actions runs semantic-release and, w
 
 - Git tag and GitHub release
 - generated release notes in the GitHub Release
-- downloadable `agent-skills-vX.Y.Z.tar.gz` archive
+- downloadable `agent-plugins-vX.Y.Z.tar.gz` archive
 
 Do not configure semantic-release to commit release assets back to `main`. The committed `package.json` version is the development placeholder `0.0.0-development`; semantic-release temporarily rewrites it only inside the CI workspace before creating the release archive. GitHub Releases are the changelog source of truth. Do not manually edit release versions in skill frontmatter. Plugin manifests may use helper-generated cachebuster versions during plugin development.

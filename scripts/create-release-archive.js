@@ -54,7 +54,7 @@ async function removeOldArchives(distDir) {
 
   await Promise.all(
     entries
-      .filter((entry) => /^agent-skills-v.+\.tar\.gz$/.test(entry))
+      .filter((entry) => /^agent-plugins-v.+\.tar\.gz$/.test(entry))
       .map((entry) => fs.rm(path.join(distDir, entry), { force: true }))
   );
 }
@@ -70,9 +70,9 @@ async function createReleaseArchive({ repoRoot, version }) {
   }
 
   const distDir = path.join(repoRoot, "dist");
-  const archiveName = `agent-skills-v${version}.tar.gz`;
+  const archiveName = `agent-plugins-v${version}.tar.gz`;
   const archivePath = path.join(distDir, archiveName);
-  const stagingDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-skills-release-"));
+  const stagingDir = await fs.mkdtemp(path.join(os.tmpdir(), "agent-plugins-release-"));
 
   try {
     await fs.mkdir(distDir, { recursive: true });

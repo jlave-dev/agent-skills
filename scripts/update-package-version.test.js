@@ -15,7 +15,7 @@ test("updates package.json without touching SKILL.md", async (t) => {
   await fs.mkdir(path.join(tempDir, "skills", "alpha"), { recursive: true });
   await fs.writeFile(
     path.join(tempDir, "package.json"),
-    `${JSON.stringify({ name: "agent-skills", version: "0.0.0" }, null, 2)}\n`
+    `${JSON.stringify({ name: "agent-plugins", version: "0.0.0" }, null, 2)}\n`
   );
   await fs.writeFile(
     path.join(tempDir, "skills", "alpha", "SKILL.md"),

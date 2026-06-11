@@ -59,9 +59,9 @@
       {
         "assets": [
           {
-            "path": "dist/agent-skills-v*.tar.gz",
-            "name": "agent-skills-v${nextRelease.version}.tar.gz",
-            "label": "Agent Skills release archive"
+            "path": "dist/agent-plugins-v*.tar.gz",
+            "name": "agent-plugins-v${nextRelease.version}.tar.gz",
+            "label": "Agent Plugins release archive"
           }
         ]
       }
